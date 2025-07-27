@@ -136,7 +136,7 @@ h1 {
     background-repeat: no-repeat;
     height: 124px;
     width: 198px;
-    position: absolute;
+    position: fixed;
     top: calc(50% - 62px);
     left: 0;
 }
