@@ -1,0 +1,152 @@
+/*
+This is a CSS file. It is where you define all of the styles for your HTML elements.
+You can use classes, IDs, and element selectors to apply styles to specific parts of your HTML:
+- Classes are defined with a period (.) followed by the class name.
+- IDs are defined with a hash (#) followed by the ID name.
+- Element selectors are just the name of the HTML element (e.g., body, h1, p).
+You can also use pseudo-classes (like :hover) and pseudo-elements (like ::before) to style elements based on their state or to style specific parts of an element.
+For example, you can style a button when it is hovered over by using the :hover pseudo-class.
+*/
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+pre {
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #dee2e6;
+    margin: 1rem 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+#inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Impact", "Arial Black", sans-serif;
+    font-size: 3rem;
+    color: #1e90ff;
+    letter-spacing: 2px;
+    text-shadow:
+        -2px -2px 0 #ffea00,
+        2px 2px 0 #ff1493,
+        4px 4px 8px #00000088;
+    background: linear-gradient(90deg, #ffea00 0%, #1e90ff 50%, #ff1493 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    .card-header {
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #dee2e6;
+        padding: 0.75rem 1.25rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .card-body {
+        flex-grow: 1;
+        padding: 1.25rem;
+        background-color: #ffffff;
+    }
+}
+
+.card {
+    border: 1px solid #dee2e6;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    /* background-image: url("../img/tom.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; */
+    padding: 2rem;
+    text-align: center;
+    min-height: 25vh;
+    margin: 2rem;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.under-construction {
+    --yellow: 255, 215, 0; /* CSS gold */
+
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-image: repeating-linear-gradient(
+            45deg,
+            black,
+            black 5px,
+            rgb(var(--yellow)) 5px,
+            rgb(var(--yellow)) 10px
+        )
+        10;
+}
+
+.backhoe {
+    background-image: url("https://www.cameronsworld.net/img/content/22/left-side/12.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 124px;
+    width: 198px;
+    position: absolute;
+    top: calc(50% - 62px);
+    left: 0;
+}
+
+.backhoe.mirrored {
+    transform: scaleX(-1);
+    left: auto;
+    right: 0;
+    margin-right: 20px;
+}
+
+.code-block {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 1rem;
+    font-family: "Courier New", Courier, monospace;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
