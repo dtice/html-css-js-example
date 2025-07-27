@@ -67,6 +67,12 @@ h1 {
     padding: 1rem;
 }
 
+@media (max-width: 940px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 .card {
     .card-header {
         background-color: #f8f9fa;
