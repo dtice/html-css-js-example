@@ -37,11 +37,28 @@ h1 {
     position: relative;
     flex-direction: column;
     padding: 2rem;
+    background-color: #f8f9fa;
+}
+
+@keyframes wacky-bg-move {
+    0% {
+        background-position:
+            0 0,
+            0 0;
+    }
+    100% {
+        background-position:
+            120px 120px,
+            120px 120px;
+    }
 }
 
 #inner {
     max-width: 1200px;
     margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid #dee2e6;
 }
 
 h1 {

@@ -13,7 +13,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>HTML 5 Boilerplate</title>
+        <title>HTML/CSS/JS Example</title>
         <link rel="stylesheet" href="styles/index.css" />
         <script src="scripts/index.js"></script>
     </head>
@@ -30,14 +30,18 @@
             The "inner" div contains the main content of the page, such as headings, paragraphs, images, and links.
             The "backhoe" divs are used to create a visual effect on the page that exists separately from the main (inner) content.
         -->
-        <div id="root">
+        <div id="root" class="starry-background">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
             <div class="backhoe"></div>
             <div id="inner">
-                <!--
-                The <h1> tag is built into HTML and is used to define the main heading of the page.
-                There are 6 levels of headings in HTML, from <h1> to <h6>.
-                -->
-                <h1>How to HTML</h1>
+                <h1>How to HTML/CSS/JS</h1>
                 <div class="hero">
                     <!--
                     You can display images on the page using the <img> tag.
@@ -49,17 +53,97 @@
                 </div>
                 <!-- This is a horizontal divider -->
                 <hr />
-                <h2>These are cards:</h2>
-                <!--
-                This is a paragraph tag. It is used to define a block of text.
-                -->
+                <h2>HTML</h2>
+                <h3>Headings</h3>
                 <p>
-                    They are an example of how you can create styled
+                    They are used to define the structure of the page. There are
+                    6 levels of headings in HTML, from
+                    <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. The
+                    <code>&lt;h1&gt;</code> tag is used for the main heading of
+                    the page, and the other tags are used for subheadings.
+                </p>
+                <h3>Paragraphs</h3>
+                <p>
+                    They are used to define blocks of text on the page. The
+                    <code>&lt;p&gt;</code> tag is used to create a paragraph.
+                    Paragraphs are used to group related content together and
+                    make the text more readable.
+                </p>
+                <p>This text is an example of a paragraph</p>
+                <h3>Lists</h3>
+                <p>There are two types of lists in HTML:</p>
+                <ul>
+                    <li>
+                        <strong>Unordered lists</strong> are used to create a
+                        list of items that do not have a specific order. The
+                        <code>&lt;ul&gt;</code> tag is used to create an
+                        unordered list, and the <code>&lt;li&gt;</code> tag is
+                        used to create a list item.
+                    </li>
+                    <li>
+                        <strong>Ordered lists</strong> are used to create a list
+                        of items that have a specific order. The
+                        <code>&lt;ol&gt;</code> tag is used to create an ordered
+                        list, and the <code>&lt;li&gt;</code> tag is used to
+                        create a list item.
+                    </li>
+                </ul>
+                <h3>Links</h3>
+                <p>
+                    You create a link on the page by creating an "anchor" tag.
+                    The <code>&lt;a&gt;</code> tag is used to create a link. The
+                    "href" attribute specifies the URL of the link, and the
+                    "target" attribute specifies where to open the link. In this
+                    case, the "target" attribute is set to "_blank", which means
+                    the link will open in a new tab or window.
+                </p>
+                <div class="link-container">
+                    <ul>
+                        <li>
+                            <a
+                                href="https://www.w3schools.com/html/"
+                                target="_blank"
+                            >
+                                HTML Tutorial
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.w3schools.com/css/"
+                                target="_blank"
+                            >
+                                CSS Tutorial
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.w3schools.com/js/"
+                                target="_blank"
+                            >
+                                JavaScript Tutorial
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h3>Code blocks</h3>
+                <p>
+                    They are annoying because they are formatted *exactly* like
+                    the source code (indentation and line-breaks included)
+                </p>
+                <div class="code-block">
+                    <code> .h3 { color: red; } </code>
+                </div>
+                <hr />
+                <h2>CSS</h2>
+                <h3>Cards</h3>
+                <p>
+                    These are an example of how you can use CSS to create styled
                     "components" that are re-usable across the entire website
                 </p>
-                <!--
-                You can find all of the styles for these cards in the "styles/index.css" file.
-                -->
+                <p>
+                    You can find all of the styles for these cards in the
+                    "styles/index.css" file.
+                </p>
                 <div class="card-container">
                     <div class="card">
                         <div class="card-header">HTML</div>
@@ -91,54 +175,8 @@
                     </div>
                 </div>
                 <hr />
-                <h2>These are links:</h2>
-                <div class="link-container">
-                    <!--
-                    This is an unordered list. It is used to create a list of items.
-                    Each item in the list is defined using the <li> tag.
-                    The <a> tag is used to create a hyperlink. The "href" attribute specifies
-                    the URL of the link. The "target" attribute specifies where to open the link.
-                    In this case, the "target" attribute is set to "_blank", which means the
-                    link will open in a new tab or window.
-                    -->
-                    <ul>
-                        <li>
-                            <a
-                                href="https://www.w3schools.com/html/"
-                                target="_blank"
-                            >
-                                HTML Tutorial
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.w3schools.com/css/"
-                                target="_blank"
-                            >
-                                CSS Tutorial
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.w3schools.com/js/"
-                                target="_blank"
-                            >
-                                JavaScript Tutorial
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <hr />
-                <h2>This is a code block</h2>
-                <p>
-                    They are annoying because they are formatted *exactly* like
-                    the source code (indentation and line-breaks included)
-                </p>
-                <div class="code-block">
-                    <code> .h2 { color: red; } </code>
-                </div>
-                <hr />
-                <h2>This is an example of JavaScript:</h2>
+                <h2>JavaScript</h2>
+                <h3>This is an example of JavaScript:</h3>
                 <p>
                     It is a simple example that shows how to use JavaScript to
                     change the text of an element on the page.
